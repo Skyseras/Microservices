@@ -86,4 +86,4 @@ Note that this is only for the troubleshooting purposes, such as verifying the d
   ```
 
 
-docker push myasserdocker/udagram-api-feed
+docker push myasserdocker/reverseproxy
