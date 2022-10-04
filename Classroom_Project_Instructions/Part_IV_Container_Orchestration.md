@@ -113,7 +113,8 @@ Use this link to <a href="https://kubernetes.io/docs/tutorials/stateless-applica
 ```bash
 # Check the deployment names and their pod status
 kubectl get deployments
-# Create a Service object that exposes the frontend deployment:
+# Create a Service object that exposes the frontend deployment:*
+kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
 kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend
 kubectl get services publicfrontend
 # Note down the External IP, such as 
@@ -195,3 +196,12 @@ kubectl describe services
 # You have horizontal scaling set against CPU usage
 kubectl describe hpa
 ```
+
+
+kubectl delete deploy name
+
+
+kubectl port-forward service/reverseproxy 8080:8080
+
+
+kubectl port-forward service/frontend 8100:8100
