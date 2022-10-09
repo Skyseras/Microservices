@@ -205,3 +205,7 @@ kubectl port-forward service/reverseproxy 8080:8080
 
 
 kubectl port-forward service/frontend 8100:8100
+
+
+
+eksctl create cluster --name udagram-eks --region us-east-1
