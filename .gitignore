@@ -43,4 +43,4 @@ venv/
 set_env.sh
 aws-credentials.yml
 env-secrets.yml
-env-configmap.yml
+env-configmap.ymlset_env.sh

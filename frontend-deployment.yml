@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: myasserdocker/udagram-frontend:localv2
+          image: myasserdocker/udagram-frontend:localv1
           ports:
             - containerPort: 80
