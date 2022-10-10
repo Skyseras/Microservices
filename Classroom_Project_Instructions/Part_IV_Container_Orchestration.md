@@ -209,3 +209,8 @@ kubectl port-forward service/frontend 8100:8100
 
 
 eksctl create cluster --name udagram-eks --region us-east-1
+
+
+kubectl autoscale deployment backend-feed --cpu-percent=50 --min=1 --max=10
+
+
