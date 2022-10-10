@@ -214,3 +214,6 @@ eksctl create cluster --name udagram-eks --region us-east-1
 kubectl autoscale deployment backend-feed --cpu-percent=50 --min=1 --max=10
 
 
+kubectl get hpa php-apache --watch
+
+kubectl delete hpa name
